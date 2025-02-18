@@ -2,11 +2,11 @@
 
 ### Project Summary
 
-Brief description of your what your project is about and why you chose that topic.
+Our topic is Greek Mythology and our website will introduce users to the world. We will have sections describing some of the major gods and influential myths.
 
 ### Live Link
 
-[Blog Page](https://{username}.github.io/{reponame}/homework-2)
+[Blog Page](https://kugrinov.github.io/group-venus-violets/)
 
 ### Key Takeaways
 
