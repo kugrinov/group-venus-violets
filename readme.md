@@ -10,7 +10,7 @@ Brief description of your what your project is about and why you chose that topi
 
 ### Key Takeaways
 
-Understanding of why we are doing this project
+We are doing this project to get experience working in a group setting and using collaboration to work towards a common goal. We are also puting our previously learned web development skills such as:html; java; basic scripting; naviagations; to use.
 
 ### Core Webpages
 
