@@ -2,7 +2,7 @@
 
 ### Project Summary
 
-Our topic is Greek Mythology and our website will introduce users to the world. We will have sections describing some of the major gods and influential myths.
+Our topic is Greek Mythology and our website will introduce users to the lore. We will have sections describing some of the major gods, creatures and influential myths within Greek Mythology.
 
 ### Live Link
 
@@ -18,7 +18,9 @@ List core webpages and briefly describe the page of them
 
 ### Design Choices
 
-List any websites that you might reference to influence you styling choices
+[Mythopedia](https://mythopedia.com/)
+[GodChecker](https://www.godchecker.com/)
+[American Folklore Society](https://americanfolkloresociety.org/)
 
 ### Members & Responsibilities
 
