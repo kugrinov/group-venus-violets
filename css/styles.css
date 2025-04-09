@@ -18,15 +18,15 @@ p {
 }
 
 nav {
-  background-color: brown;
-  height: 60px;
+  background-color: rgb(209, 131, 59);
+  height: 70px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 40px;
-  justify-content: right;
+  justify-content: left;
   align-items: center;
   align-content: center;
   margin-right: 20px;
@@ -34,19 +34,20 @@ nav ul {
 }
 
 nav ul a {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   text-decoration: none;
   font-family: Georgia, "Times New Roman", Times, serif;
   padding: 2px;
 }
 
-.logo {
-  font-weight: bold;
-  margin-left: -800px;
+.logo img {
+  height: 50px;
+  width: 50px;
+  margin-top: -10px;
 }
 
 .active {
   font-weight: bold;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid black;
 }
