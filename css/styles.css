@@ -86,3 +86,17 @@ nav ul a {
 
 #infoBlurb {
 }
+
+
+#titanholder {
+  width: 900px;
+  margin-left: 100px;
+  text-decoration: none;
+  list-style: none;
+}
+#titanli {
+  align-items: left;
+  justify-content: space-evenly;
+  width:700px ;
+  list-style: none;
+}
