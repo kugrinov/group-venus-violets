@@ -52,10 +52,17 @@ nav ul a {
   border-bottom: 2px solid black;
 }
 
-div {
+#godsHero {
   width: 1300px;
   min-height: 900px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
+}
+
+#godsMain {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 40px;
 }
