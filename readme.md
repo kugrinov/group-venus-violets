@@ -16,19 +16,17 @@ We are doing this project to get experience working in a group setting and using
 
 Index page- pick between the following pages
 
-"family tree" page- depicts gods and goddesses with rudementary visual information on thier relationships, clicking on individual gods or characters will bring up a page that delves deeper into that character with more information on that specific individual
+Gods page- depicts gods and goddesses with basic information on their relationships and brief descriptions of who they are and what they do, clicking on individual gods or characters will bring up a page that delves deeper into that character with more information on that specific individual
 
-Gods and deities- the page that shows up following selection of a god from the "family tree" page Includes itemized list of all gods and characters freatures around the site, separated into catagories based on nature distinguishing the different kinds of gods olympians, titans, cthonic etc
+Titans- similar to gods page but for titans
 
-Mythical Creatures- itemized list of featured creatures throughout the myths and family tree pages catagorized by humanoid, "frankenstein esque", elemental etc.
+Mythical Creatures- similar to gods page but for creatures
 
-Heroes- itemized list of featured heroes throughout the myths and family tree pages catagorized by demigod, mortal, etc.
+Myths and Heroes- a page with a list of myths with hypertext linking to the heroes description below and potentially to other pages if a god or creature is mentioned
 
-Myths page- myths separated into main influential myths with hypertext linking to the gods and dieties page to give additional information if the reader clicks it
+Worship page- specific examples and explanation of the worship of these gods
 
-Locations page?
 
-Worship page?
 
 Basically a wikepedia-like website with myths linking to information pages on the various characters
 
