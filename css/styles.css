@@ -51,3 +51,11 @@ nav ul a {
   font-weight: bold;
   border-bottom: 2px solid black;
 }
+
+div {
+  width: 1300px;
+  min-height: 900px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
