@@ -51,9 +51,3 @@ nav ul a {
   font-weight: bold;
   border-bottom: 2px solid black;
 }
-
-#homeMain {
-  background-color: bisque;
-  width: 100%;
-  min-height: 1000px;
-}
