@@ -60,9 +60,29 @@ nav ul a {
   margin: 0 auto;
 }
 
-#godsMain {
+#godsTitle {
   display: flex;
   justify-content: center;
   margin: 0 auto;
   font-size: 40px;
+}
+
+#godsMain {
+  background-color: teal;
+  height: 300px;
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#godName {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 20px;
+}
+
+#infoBlurb {
 }
