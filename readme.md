@@ -2,7 +2,7 @@
 
 ### Project Summary
 
-Our topic is Greek Mythology and our website will introduce users to the lore. We will have sections describing some of the major gods, creatures and influential myths within Greek Mythology.
+Our topic is Greek Mythology and our website will provide an overview of some of the major elements to users. This includes the major gods, titans myths, creatures, and ways of worship. For interactivity, users will have the opportunity to like their favorite gods and creatures. They will also be able to upload there own ideas for new creatures.
 
 ### Live Link
 
@@ -26,8 +26,6 @@ Myths and Heroes- a page with a list of myths with hypertext linking to the hero
 
 Worship page- specific examples and explanation of the worship of these gods
 
-
-
 Basically a wikepedia-like website with myths linking to information pages on the various characters
 
 ### Design Choices
@@ -35,6 +33,8 @@ Basically a wikepedia-like website with myths linking to information pages on th
 [Mythopedia](https://mythopedia.com/)
 [GodChecker](https://www.godchecker.com/)
 [American Folklore Society](https://americanfolkloresociety.org/)
+
+Throughout the website there will be patterns and colors often used in ancient greek art. Each page will also group similar content together that can be jumped to by the user. They will also have the option to go back to the top of the page on longer webpages.
 
 ### Members & Responsibilities
 
