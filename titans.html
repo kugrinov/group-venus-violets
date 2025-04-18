@@ -98,12 +98,12 @@ function editTitan(id, currentName, currentDomain, currentDescription) {
 
 window.editTitan = editTitan;
 
-function deleteTitan(id) {
-  const titanRef = doc(db, "Titans", id);
-  deleteDoc(titanRef).then(() => loadTitans()); 
-}
+// function deleteTitan(id) {
+//   const titanRef = doc(db, "Titans", id);
+//   deleteDoc(titanRef).then(() => loadTitans()); 
+// }
 
-window.deleteTitan = deleteTitan;
+// window.deleteTitan = deleteTitan;
 
 async function likeTitan(id) {
   const titanRef = doc(db, "Titans", id);
