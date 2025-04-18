@@ -10,52 +10,110 @@
   <script type="module">
     
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
-    import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+import { getFirestore, collection, getDocs, addDoc, updateDoc, deleteDoc, doc, increment } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
 
-   
-    const firebaseConfig = {
-      apiKey: "AIzaSyD2bKuWbxFKnkiBA_RRbwKBjjQz0q38pa0",
-      authDomain: "lucyw802-final-db.firebaseapp.com",
-      projectId: "lucyw802-final-db",
-      storageBucket: "lucyw802-final-db.appspot.com", 
-      messagingSenderId: "824396802366",
-      appId: "1:824396802366:web:efa593680c5ff8834b646f",
-      measurementId: "G-JPVCEF3QQH"
-    };
+const firebaseConfig = {
+  apiKey: "AIzaSyD2bKuWbxFKnkiBA_RRbwKBjjQz0q38pa0",
+  authDomain: "lucyw802-final-db.firebaseapp.com",
+  projectId: "lucyw802-final-db",
+  storageBucket: "lucyw802-final-db.appspot.com",
+  messagingSenderId: "824396802366",
+  appId: "1:824396802366:web:efa593680c5ff8834b646f",
+  measurementId: "G-JPVCEF3QQH"
+};
 
-    
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
-    
-    async function loadTitans() {
-      console.log("Loading titans...");
-      const titansCollection = collection(db, "Titans");
 
-      try {
-        const querySnapshot = await getDocs(titansCollection);
-        const listElement = document.getElementById("titanList");
-        listElement.innerHTML = "";
+async function loadTitans() {
+  console.log("Loading titans...");
+  const titansCollection = collection(db, "Titans");
 
-        querySnapshot.forEach((doc) => {
-          const titanData = doc.data();
-          console.log("Titan loaded:", titanData); 
+  try {
+    const querySnapshot = await getDocs(titansCollection);
+    const listElement = document.getElementById("titanList");
+    listElement.innerHTML = ""; 
 
-          const listItem = document.createElement("li");
-          listItem.innerHTML = `
-            <strong>${titanData.Name}</strong><br>
-            Domain: ${titanData.Domain}<br>
-            Description: ${titanData.Description}
-          `;
-          listElement.appendChild(listItem);
-        });
-      } catch (error) {
-        console.error("Error loading titans:", error);
-      }
-    }
+    querySnapshot.forEach((doc) => {
+      const titanData = doc.data();
+      const titanId = doc.id;
+      console.log("Titan loaded:", titanData);
 
-    
-    window.addEventListener("DOMContentLoaded", loadTitans);
+      const listItem = document.createElement("li");
+      listItem.innerHTML = `
+        <strong>${titanData.Name}</strong><br>
+        Domain: ${titanData.Domain}<br>
+        Description: ${titanData.Description}<br>
+        Likes: <span id="likeCount-${titanId}">${titanData.Likes || 0}</span> 
+        <button onclick="likeTitan('${titanId}')">Like</button>
+        <button onclick="editTitan('${titanId}', '${titanData.Name}', '${titanData.Domain}', '${titanData.Description}')">Edit</button>
+        <button onclick="deleteTitan('${titanId}')">Delete</button>
+      `;
+      listElement.appendChild(listItem);
+    });
+  } catch (error) {
+    console.error("Error loading titans:", error);
+  }
+}
+
+
+document.getElementById("addTitanForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const name = document.getElementById("name").value;
+  const domain = document.getElementById("domain").value;
+  const description = document.getElementById("description").value;
+  
+
+  try {
+    const titansCollection = collection(db, "Titans");
+    await addDoc(titansCollection, {
+      Name: name,
+      Domain: domain,
+      Description: description,
+      Likes: randomLikes
+    });
+    loadTitans(); 
+    document.getElementById("addTitanForm").reset(); 
+  } catch (error) {
+    console.error("Error adding titan:", error);
+  }
+});
+
+
+function editTitan(id, currentName, currentDomain, currentDescription) {
+  const newName = prompt("Edit Name", currentName);
+  const newDomain = prompt("Edit Domain", currentDomain);
+  const newDescription = prompt("Edit Description", currentDescription);
+
+  if (newName && newDomain && newDescription) {
+    const titanRef = doc(db, "Titans", id);
+    updateDoc(titanRef, {
+      Name: newName,
+      Domain: newDomain,
+      Description: newDescription
+    }).then(() => loadTitans()); 
+  }
+}
+
+
+function deleteTitan(id) {
+  const titanRef = doc(db, "Titans", id);
+  deleteDoc(titanRef).then(() => loadTitans()); 
+}
+
+
+async function likeTitan(id) {
+  const titanRef = doc(db, "Titans", id);
+  const likeCountRef = doc(db, "Titans", id);
+  await updateDoc(titanRef, {
+    Likes: increment(1) 
+  });
+  const likeCountElement = document.getElementById(`likeCount-${id}`);
+  likeCountElement.textContent = parseInt(likeCountElement.textContent) + 1;
+}
+
+window.addEventListener("DOMContentLoaded", loadTitans);
   </script>
 </head>
 
