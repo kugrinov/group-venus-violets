@@ -96,12 +96,14 @@ function editTitan(id, currentName, currentDomain, currentDescription) {
   }
 }
 
+window.editTitan = editTitan;
 
 function deleteTitan(id) {
   const titanRef = doc(db, "Titans", id);
   deleteDoc(titanRef).then(() => loadTitans()); 
 }
 
+window.deleteTitan = deleteTitan;
 
 async function likeTitan(id) {
   const titanRef = doc(db, "Titans", id);
@@ -112,6 +114,8 @@ async function likeTitan(id) {
   const likeCountElement = document.getElementById(`likeCount-${id}`);
   likeCountElement.textContent = parseInt(likeCountElement.textContent) + 1;
 }
+
+window.likeTitan = likeTitan;
 
 window.addEventListener("DOMContentLoaded", loadTitans);
   </script>
