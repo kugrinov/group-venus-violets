@@ -160,15 +160,89 @@ footer {
 #infoBlurb {
 }
 
-#titanholder {
-  width: 900px;
-  margin-left: 100px;
-  text-decoration: none;
-  list-style: none;
-}
-#titanli {
-  align-items: left;
-  justify-content: space-evenly;
-  width: 700px;
-  list-style: none;
-}
+/* TITAN and MYTH Page Styling */
+#titanbody {
+  font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: #f4f4f4;
+    color: #333;
+    
+  }
+
+  #titanh1 {
+    text-align: left;
+    color: #667105;
+  }
+
+  ul#titanList {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+  }
+
+  ul#titanList li {
+    background: white;
+    
+    border-left: 5px solid #667105;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+    
+  }
+
+  ul#titanList li strong {
+    font-size: 24px;
+    color: #667105;
+  }
+
+  #addTitanForm {
+    margin: auto;
+    align-items: left;
+    justify-content: space-between;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+  flex-direction: column; 
+  align-items: center;
+  }
+  #name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid #667105;
+    border-radius: 4px;
+
+  }
+  #domain {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid #667105;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  #description {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid #667105;
+    border-radius: 4px;
+    margin-top: 5px;
+
+  }
+  #submit {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid #667105;
+    border-radius: 4px;
+    background-color: #cbc27c;
+    color: #667105;
+    margin-top: 5px;
+    
+  }
+  #fixform {
+    display: flex;
+  justify-content: flex-start;
+  background-color: 
+  }
+  #titanh2 {
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    color: #cbc27c;
+  }
+  #form {
+    background-color: #667105;
+    padding: 10px;
+  }

@@ -1,109 +1,112 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Venus Violets Final Project</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li>
-          <a class="logo" href="index.html"
-            ><img src="images/greekMythologyNav_White.png" alt=""
-          /></a>
-        </li>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="gods.html">Olympians</a>
-        </li>
-        <li>
-          <a class="active" href="titans.html">Titans</a>
-        </li>
-        <li>
-          <a href="creatures.html">Mythical Creatures</a>
-        </li>
-        <li>
-          <a href="myths.html">Myths</a>
-        </li>
-        <li>
-          <a href="worship.html">Worship</a>
-        </li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Greek Titans</title>
+  <link rel="stylesheet" href="css/styles.css">
 
-    <h1>Titans</h1>
+  <script type="module">
+    
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+    import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
 
-    <div id="titanholder">
-      <ul>
-        <li id="titanli">
-          <h2>Oceanus</h2>
-          <p>oceans</p>
-        </li>
-        <li id="titanli">
-          <h2>Coeus</h2>
-          <p>filler</p>
-        </li>
-        <li id="titanli">
-          <h2>Crius</h2>
-          <p>wouldnt you like to know</p>
-        </li>
-        <li id="titanli">
-          <h2>Hyperion</h2>
-          <p>light i think</p>
-        </li>
-        <li id="titanli">
-          <h2>Iapetus</h2>
-          <p>apes</p>
-        </li>
-        <li id="titanli">
-          <h2>Cronus</h2>
-          <p>time</p>
-        </li>
-        <li id="titanli">
-          <h2>Thea</h2>
-          <p>earth</p>
-        </li>
-        <li id="titanli">
-          <h2>Rhea</h2>
-          <p>earth2</p>
-        </li>
-        <li id="titanli">
-          <h2>Themis</h2>
-          <p>not time but totally could be</p>
-        </li>
-        <li id="titanli">
-          <h2>Mnemosyne</h2>
-          <p>memory</p>
-        </li>
-        <li id="titanli">
-          <h2>Phoebe</h2>
-          <p>wisdom?</p>
-        </li>
-        <li id="titanli">
-          <h2>Tethys</h2>
-          <p>teeth</p>
-        </li>
-        <li id="titanli">
-          <h2>Prometheus</h2>
-          <p>foresight</p>
-        </li>
-        <li id="titanli">
-          <h2>Atlas</h2>
-          <p>being srtong</p>
-        </li>
-        <li id="titanli">
-          <h2>Helios</h2>
-          <p>the sun</p>
-        </li>
-      </ul>
-    </div>
+   
+    const firebaseConfig = {
+      apiKey: "AIzaSyD2bKuWbxFKnkiBA_RRbwKBjjQz0q38pa0",
+      authDomain: "lucyw802-final-db.firebaseapp.com",
+      projectId: "lucyw802-final-db",
+      storageBucket: "lucyw802-final-db.appspot.com", 
+      messagingSenderId: "824396802366",
+      appId: "1:824396802366:web:efa593680c5ff8834b646f",
+      measurementId: "G-JPVCEF3QQH"
+    };
 
-    <footer></footer>
-  </body>
+    
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    
+    async function loadTitans() {
+      console.log("Loading titans...");
+      const titansCollection = collection(db, "Titans");
+
+      try {
+        const querySnapshot = await getDocs(titansCollection);
+        const listElement = document.getElementById("titanList");
+        listElement.innerHTML = "";
+
+        querySnapshot.forEach((doc) => {
+          const titanData = doc.data();
+          console.log("Titan loaded:", titanData); 
+
+          const listItem = document.createElement("li");
+          listItem.innerHTML = `
+            <strong>${titanData.Name}</strong><br>
+            Domain: ${titanData.Domain}<br>
+            Description: ${titanData.Description}
+          `;
+          listElement.appendChild(listItem);
+        });
+      } catch (error) {
+        console.error("Error loading titans:", error);
+      }
+    }
+
+    
+    window.addEventListener("DOMContentLoaded", loadTitans);
+  </script>
+</head>
+
+<body itemid="titanbody">
+  <nav>
+    <ul>
+      <li>
+        <a class="logo" href="index.html"
+          ><img src="images/greekMythologyNav_White.png" alt=""
+        /></a>
+      </li>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="gods.html">Olympians</a>
+      </li>
+      <li>
+        <a class="active" href="titans.html">Titans</a>
+      </li>
+      <li>
+        <a href="creatures.html">Mythical Creatures</a>
+      </li>
+      <li>
+        <a href="myths.html">Myths</a>
+      </li>
+      <li>
+        <a href="worship.html">Worship</a>
+      </li>
+    </ul>
+  </nav>
+  <h1 id="titanh1">Titans</h1>
+  <ul id="titanList"></ul> <!-- Display list here -->
+  
+ 
+<div id="form">
+  <h2 id="titanh2">Add a New Titan</h2>
+  <div id="fixform">
+    <form id="addTitanForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="domain" placeholder="Domain" required>
+      <textarea id="description" placeholder="Description" required></textarea>
+      <button type="submit" id="submit">Add Titan</button>
+      
+    </form>
+
+  </div>
+</div>
+  
+<footer></footer>
+</body>
 </html>
 
 <!-- Oceanus
