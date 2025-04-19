@@ -165,15 +165,12 @@ footer {
   font-family: Georgia, "Times New Roman", Times, serif;
     background-color: #f4f4f4;
     color: #333;
-    padding: 20px;
     
   }
 
   #titanh1 {
-    text-align: center;
+    text-align: left;
     color: #667105;
-    margin-top: 20px;
-    font-size: 40px;
   }
 
   ul#titanList {
@@ -188,7 +185,6 @@ footer {
     border-left: 5px solid #667105;
     margin-bottom: 20px;
     padding: 20px;
-    margin-left: 20px;
     
     
   }
@@ -229,13 +225,10 @@ footer {
   #submit {
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: 2px solid #667105;
-    border-radius: 20px;
+    border-radius: 4px;
     background-color: #cbc27c;
     color: #667105;
     margin-top: 5px;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
     
   }
   #fixform {
@@ -253,3 +246,84 @@ footer {
     background-color: #667105;
     padding: 10px;
   }
+ 
+  #titanbody button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid #667105;
+    border-radius: 4px;
+    background-color: #cbc27c;
+    color: #667105;
+  }
+
+#mythsnav {
+  color: #cbc27c;
+
+}
+#mythshead {
+  color: #667105;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#characters {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  width: 50%;
+  align-items: center;
+  margin-left: 25%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #667105;
+
+}
+
+#mythholder {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+#Heracles {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #667105;
+  text-align: center;
+  margin-top: 20px;
+}
+
+div h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #667105;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+div ul li a {
+  text-decoration: none;
+  color: #667105;
+  font-size: 25px;
+  
+
+}
+
+
+
+
+#mythsnav {
+  font-size: small;
+}
+
+#mythtext {
+  margin: 20px;
+  background-color: #667105;
+  color: #cbc27c;
+  padding: 20px;
+}
+
+#mythsbody {
+  background-color: #592a24;
+}
