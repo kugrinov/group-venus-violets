@@ -17,7 +17,7 @@ p {
   margin-bottom: 16px;
 }
 
-nav {
+#nav {
   background-color: #667105;
   height: 70px;
 }
@@ -33,7 +33,7 @@ nav ul {
   padding: 20px;
 }
 
-nav ul a {
+#nav ul a {
   color: #f6eeba;
   font-size: 18px;
   text-decoration: none;
@@ -263,12 +263,24 @@ footer {
 
 #mythsnav {
   color: #cbc27c;
+  margin-top: -20px;
+  background-color: #cbc27c;
 
 }
+
+#mythsnav ul a {
+  color: #cbc27c;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 2px;
+  
+}
 #mythshead {
-  color: #667105;
+  color: #cbc27c;
   text-align: center;
-  margin-top: 20px;
+ font-size: 60px;
+  background-color: #667105;
 }
 
 #characters {
@@ -290,6 +302,8 @@ footer {
   
   text-align: center;
   margin-top: 20px;
+  
+
 }
 
 
@@ -300,15 +314,17 @@ footer {
   margin-top: 20px;
 }
 
-div h3 {
+#mythholder h3 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #667105;
   text-align: center;
   margin-top: 20px;
   font-size: 30px;
   font-weight: bold;
+  text-decoration: underline;
+
 }
-div ul li a {
+#mythholder ul li a {
   text-decoration: none;
   color: #cbc27c;
   font-size: 25px;
@@ -321,6 +337,7 @@ div ul li a {
 
 #mythsnav {
   font-size: small;
+  background-color: #667105;
 }
 
 #mythtext {
@@ -328,6 +345,7 @@ div ul li a {
   background-color: #667105;
   color: #cbc27c;
   padding: 20px;
+  border-left: 5px solid #cbc27c;
 }
 
 #mythsbody {
