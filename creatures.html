@@ -40,38 +40,33 @@
     <h3>Create Your Own Creature</h3>
     <form action="#" id="custom-creature">
       <div>
-        <label for="creature-name">Name:</label>
-        <input type="text" id="creature-name" name="creature-name" required />
+        <label for="creatureName">Name:</label>
+        <input type="text" id="creatureName" name="creatureName" required />
       </div>
       <div>
-        <label for="creature-heads">Number of Heads:</label>
-        <input type="text" id="creature-heads" name="creature-heads" required />
+        <label for="creatureHeads">Number of Heads:</label>
+        <input type="text" id="creatureHeads" name="creatureHeads" required />
       </div>
       <div>
-        <label for="creature-colors">Color(s):</label>
+        <label for="creatureColors">Color(s):</label>
+        <input type="text" id="creatureColors" name="creatureColors" required />
+      </div>
+      <div>
+        <label for="creatureAbility">Special Ability:</label>
         <input
           type="text"
-          id="creature-colors"
-          name="creature-colors"
-          required
-        />
-      </div>
-      <div>
-        <label for="creature-ability">Special Ability:</label>
-        <input
-          type="text"
-          id="creature-ability"
-          name="creature-ability"
+          id="creatureAbility"
+          name="creatureAbility"
           required
         />
       </div>
 
-      <!-- <div>
-        <input type="submit" value="Create New Creature" />
-      </div> -->
+      <div>
+        <button type="submit">Create Creature</button>
+      </div>
     </form>
 
-    <ul id="customCreatures"></ul>
+    <section id="customCreatures"></section>
 
     <footer></footer>
 
