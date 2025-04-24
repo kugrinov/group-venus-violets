@@ -2,7 +2,7 @@
 
 ### Project Summary
 
-Our topic is Greek Mythology and our website will provide an overview of some of the major elements to users. This includes the major gods, titans myths, creatures, and ways of worship. For interactivity, users will have the opportunity to like their favorite gods and creatures. They will also be able to upload there own ideas for new creatures.
+Our topic is Greek Mythology and our website will provide an overview of some of the major elements to users. This includes the major gods, titans myths, creatures, and ways of worship. For interactivity, users will have the opportunity to like their favorite titans. They will also be able to upload there own ideas for new creatures and titans through a form on the webpage.
 
 ### Live Link
 
@@ -34,7 +34,11 @@ Basically a wikepedia-like website with myths linking to information pages on th
 [GodChecker](https://www.godchecker.com/)
 [American Folklore Society](https://americanfolkloresociety.org/)
 
-Throughout the website there will be patterns and colors often used in ancient greek art. Each page will also group similar content together that can be jumped to by the user. They will also have the option to go back to the top of the page on longer webpages.
+Throughout the website there will be patterns and colors often used in ancient greek art. These colors include olive greens, browns, and pale parchment. The website uses a serif font since it is more traditional than sans-serif fonts to match the long history of Greek Mythology. Each page's layout will group similar content together in boxes to make the information clear to the user.
+
+Data Collections:
+Custom Creature Collection, properties: name, heads, colors, and ability
+Titan Collection, properties: name, domain, description; alo tracks likes and a delete option
 
 ### Members & Responsibilities
 

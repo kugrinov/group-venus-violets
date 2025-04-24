@@ -334,3 +334,145 @@ ul#titanList li strong {
 #mythsbody {
   background-color: #592a24;
 }
+
+#custom-creature {
+  background-color: #667105;
+  width: 620px;
+  height: 440px;
+  margin: 0 auto;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#custom-creature label {
+  color: #667105;
+  display: inline-block;
+  width: 250px;
+  height: 40px;
+  font-size: 20px;
+  padding: 10px;
+  padding-top: 3px;
+  margin-top: 27px;
+  margin-right: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#custom-creature input {
+  padding: 10px;
+  height: 50px;
+  width: 300px;
+  margin-left: 5px;
+  border-radius: 20px;
+  border: solid 5px #cbc27c;
+}
+
+#custom-creature button {
+  width: 550px;
+  padding: 10px;
+  margin: 15px;
+  background-color: white;
+  border: solid 5px #cbc27c;
+  border-radius: 20px;
+  height: 50px;
+  font-size: 25px;
+  color: #667105;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#custom-creature button:hover {
+  background-color: #cbc27c;
+}
+
+#creatureFormSection {
+  background-color: #592a24;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -40px;
+}
+
+#creatureFormSection h3 {
+  color: #cbc27c;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#customCreatures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: #592a24;
+  padding: 50px;
+}
+
+#customCreatures div {
+  background-color: #f6eeba;
+  display: inline-block;
+  width: 400px;
+  min-height: 150px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #592a24;
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+#customCreatures div ul {
+  list-style: none;
+}
+
+#creatureMain {
+  background-color: #592a24;
+  min-height: 1000px;
+  padding: 40px;
+}
+
+#creatureMain h1 {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #cbc27c;
+  padding: 20px;
+}
+
+.creatureInfo {
+  height: 300px;
+  width: 800px;
+  background-color: #667105;
+  margin: 0 auto;
+  border-left: 10px solid #cbc27c;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.creatureImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f6eeba;
+  font-size: 24px;
+}
+
+.creatureImage img {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.creatureInfo p {
+  width: 400px;
+  align-self: center;
+  color: #f6eeba;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 25px;
+}
