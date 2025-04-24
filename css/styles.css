@@ -262,7 +262,7 @@ ul#titanList li strong {
 #fixform {
   display: flex;
   justify-content: flex-start;
-  background-color: ;
+  /* background-color: ; */
 }
 #titanh2 {
   margin-top: 10px;

@@ -1,4 +1,4 @@
-## Final Project
+## Venus Violets Final Project
 
 ### Project Summary
 
@@ -39,6 +39,7 @@ Throughout the website there will be patterns and colors often used in ancient g
 Data Collections:
 Custom Creature Collection, properties: name, heads, colors, and ability
 Titan Collection, properties: name, domain, description; alo tracks likes and a delete option
+Gods Collection, properties: image, name
 
 ### Members & Responsibilities
 
