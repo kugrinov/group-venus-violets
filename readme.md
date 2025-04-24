@@ -10,7 +10,7 @@ Our topic is Greek Mythology and our website will provide an overview of some of
 
 ### Key Takeaways
 
-We are doing this project to get experience working in a group setting and using collaboration to work towards a common goal. We are also puting our previously learned web development skills such as:html; java; basic scripting; naviagations; to use.
+We are doing this project to get experience working in a group setting and using collaboration to work towards a common goal. We are also puting our previously learned web development skills such as:html; javascript; basic scripting; naviagations; to use. We used CRUD and CSS to style our webpages and give them both ways of interaction with the database and a cohesive theme.
 
 ### Core Webpages
 
@@ -43,5 +43,8 @@ Titan Collection, properties: name, domain, description; alo tracks likes and a 
 ### Members & Responsibilities
 
 Kalina Ugrinova - President, Designer
+-Home page, navigation, creature page
 Haley Birdwell - Scrum Master, Analyst
+-Gods, worship
 Lucy Williamson - Architect
+-Myths, titans
