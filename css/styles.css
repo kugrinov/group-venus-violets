@@ -148,6 +148,16 @@ footer {
   background-color: #f6eeba;
 }
 
+#symbols article {
+  width: 200px;
+  text-align: center;
+  gap: 20px;
+}
+
+#symbols article img {
+  height: 200px;
+}
+
 #godsMain {
   background-color: #592a24;
   height: 300px;
