@@ -105,7 +105,7 @@ nav ul {
 
 #homeDiscover {
   width: 100%;
-  height: 400px;
+  height: 550px;
   background-image: url(../images/greenFill.jpeg);
   background-size: 20%;
   background-repeat: repeat;
@@ -137,11 +137,14 @@ footer {
 
 #discoverFlex {
   display: flex;
-  height: 200px;
+  height: 00px;
   gap: 80px;
   width: 900px;
   justify-content: space-between;
   padding-top: 50px;
+  color: #cbc27c;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
 }
 
 #godsPageBg {
@@ -502,4 +505,18 @@ ul#titanList li strong {
   color: #f6eeba;
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 25px;
+}
+
+.discoverAnchor {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.discoverAnchor img {
+  width: 200px;
+  height: 200px;
 }
