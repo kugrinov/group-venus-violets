@@ -97,6 +97,8 @@ nav ul {
   margin: 0 auto;
   padding: 50px;
   color: #341d1a;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.5px;
 }
 
 #homeHistory h2 {
