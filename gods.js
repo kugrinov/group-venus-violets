@@ -4,7 +4,7 @@ const godsSymbols = [
     {image:"../group-venus-violets/images/Aphrodite-01.png", name: "Aphrodite"
     },
 
-    {image:"", name: "Athena"
+    {image:"../group-venus-violets/images/Athena_Symb-01.png", name: "Athena"
     },
 
     {image:"../group-venus-violets/images/Apollo-01.png", name: "Apollo"
@@ -13,28 +13,28 @@ const godsSymbols = [
     {image:"../group-venus-violets/images/Ares-01.png", name: "Ares"
     },
 
-    {image:"", name: "Artemis"
+    {image:"../group-venus-violets/images/Artemis_Symb-01.png", name: "Artemis"
     },
 
-    {image:"", name: "Zeus"
+    {image:"../group-venus-violets/images/Zeus_Symb-01.png", name: "Zeus"
     },
 
-    {image:"", name: "Hera"
+    {image:"../group-venus-violets/images/hera_symb-01.png", name: "Hera"
     },
     
-    {image:"", name: "Poseidon"
+    {image:"../group-venus-violets/images/Posideon_Symb-01.png", name: "Poseidon"
     },
 
-    {image:"", name: "Hermes"
+    {image:"../group-venus-violets/images/hermes-Symb-01.png", name: "Hermes"
     },
 
-    {image:"", name: "Demeter"
+    {image:"../group-venus-violets/images/Demeter_Symb-01.png", name: "Demeter"
     },
 
-    {image:"", name:  "Hephaestus"
+    {image:"../group-venus-violets/images/Heph_Symb-01.png", name:  "Hephaestus"
     },
 
-    {image:"", name:  "Dionysus"
+    {image:"../group-venus-violets/images/Dionysus_Symb-01.png", name:  "Dionysus"
     },
 ]
 

@@ -157,10 +157,22 @@ footer {
   width: 200px;
   text-align: center;
   gap: 20px;
+  justify-items: center;
+}
+
+#symbols {
+  height: 400px;
+  width: 700px;
+  position: absolute;
+  left: 455px;
+  bottom: -90px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #symbols article img {
-  height: 200px;
+  overflow: hidden;
+  width: 115px;
 }
 
 #godsMain {
@@ -531,4 +543,13 @@ ul#titanList li strong {
 .discoverAnchor img {
   width: 200px;
   height: 200px;
+}
+
+#worship {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 40px;
+  background-color: #341d1a;
+  color: #667105;
 }
