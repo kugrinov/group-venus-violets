@@ -214,6 +214,7 @@ footer {
   margin-right: 20px;
   margin-left: 20px;
   color: #f6eeba;
+  font-size: 18px;
 }
 
 /* TITAN and MYTH Page Styling */
@@ -552,4 +553,12 @@ ul#titanList li strong {
   font-size: 40px;
   background-color: #341d1a;
   color: #667105;
+}
+
+.likes {
+  padding-left: 500px;
+}
+
+.likes button {
+  color: red;
 }
