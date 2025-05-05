@@ -6,7 +6,7 @@ const db = getFirestore(app);
 
 const godTypeCollection = collection(db, "newGod")
 
-const newGodFormRef = document.querySelector("#createGod")
+const newGodFormRef = document.querySelector("#yourGod")
 
 const newGodRef = document.querySelector("#urGod")
 
@@ -15,7 +15,7 @@ async function addNewGod(e) {
 
     const formData = new FormData(e.currentTarget)
 
-    await addDoc(godTypeCollection, {godName: formData.get("#godlyPower")});
+    await addDoc(godTypeCollection, {godName: formData.get("godlyPower")});
 
 getNewGod();
 }
