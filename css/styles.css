@@ -554,3 +554,27 @@ ul#titanList li strong {
   background-color: #341d1a;
   color: #667105;
 }
+
+#createGod {
+  background-color: #667105;
+  color: #341d1a;
+  font-size: 20px;
+}
+
+#createGod button {
+  background-color: #f6eeba;
+  width: 70px;
+  height: 30px;
+}
+
+#urGod {
+  background-color: #667105;
+  color: #f6eeba;
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding-left: 350px;
+}
